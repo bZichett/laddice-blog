@@ -1,0 +1,305 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #c9a961;
+    font-style: italic;
+}
+
+/* Sacred Geometry Container */
+.sacred-geometry {
+    width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+}
+
+/* Central Axis - Tree of Life */
+.central-axis {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom,
+    #ff6b6b 0%,
+    #f9844a 15%,
+    #ffd60a 30%,
+    #90e0ef 50%,
+    #4361ee 70%,
+    #7209b7 85%,
+    #c77dff 100%);
+    transform: translateX(-50%);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* Angelic Hierarchy Column */
+.angelic-column {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 300px;
+}
+
+.angelic-order {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(138, 43, 226, 0.1);
+    border-left: 4px solid;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.angelic-order:hover {
+    background: rgba(138, 43, 226, 0.2);
+    transform: translateX(10px);
+}
+
+.order-symbol {
+    font-size: 2.5em;
+    float: left;
+    margin-right: 15px;
+    filter: drop-shadow(0 0 20px currentColor);
+    animation: rotate 20s linear infinite;
+}
+
+.order-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-domain {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Timeline Events */
+.timeline-events {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 600px;
+}
+
+.timeline-event {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.05);
+    border-right: 4px solid;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-event:hover {
+    background: rgba(255, 215, 0, 0.1);
+    transform: translateX(-10px);
+}
+
+.event-time {
+    font-size: 0.9em;
+    color: #90e0ef;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.event-description {
+    line-height: 1.6;
+    color: #e9c46a;
+}
+
+.integration-type {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid currentColor;
+}
+
+/* Connection Lines */
+.connection-line {
+    position: absolute;
+    height: 2px;
+    background: rgba(255, 215, 0, 0.3);
+    transform-origin: left center;
+}
+
+/* Merkabah Wheel */
+.merkabah-wheel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    animation: rotate 60s linear infinite;
+}
+
+.merkabah-ring {
+    position: absolute;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.ring-1 {
+    width: 100%;
+    height: 100%;
+    animation: counter-rotate 90s linear infinite;
+}
+
+.ring-2 {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    animation: rotate 75s linear infinite;
+}
+
+.ring-3 {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    animation: counter-rotate 60s linear infinite;
+}
+
+.merkabah-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, transparent 70%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Color coding for orders */
+.seraphim { border-color: #ff0044; color: #ff6b6b; }
+.cherubim { border-color: #ff6600; color: #f9844a; }
+.thrones { border-color: #ffaa00; color: #ffd60a; }
+.dominions { border-color: #00ff00; color: #90e0ef; }
+.virtues { border-color: #00ffff; color: #00b4d8; }
+.powers { border-color: #0088ff; color: #4361ee; }
+.principalities { border-color: #8833ff; color: #7209b7; }
+.archangels { border-color: #ff00ff; color: #c77dff; }
+.angels { border-color: #ffffff; color: #f8f9fa; }
+
+/* Sacred Geometry Overlay */
+.sacred-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.sacred-pattern::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 2px solid #ffd60a;
+}
+
+.sacred-pattern::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffd60a;
+}
+
+/* Epoch Headers */
+.epoch-header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    color: rgba(255, 215, 0, 0.6);
+    font-style: italic;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.epoch-past {
+    top: 20px;
+}
+
+.epoch-present {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.epoch-future {
+    bottom: 20px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes counter-rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+/* Legend */
+.legend {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-symbol {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
